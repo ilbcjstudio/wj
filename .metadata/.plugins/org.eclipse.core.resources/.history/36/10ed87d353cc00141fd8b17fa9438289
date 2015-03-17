@@ -1,0 +1,15 @@
+package dao;
+
+import java.util.List;
+
+public interface BaseDaoImp {
+	public List getAllInfos(String hql);
+	
+	public Object getInfosByID(Class cl,int id);
+	
+	public void add(Object object);
+	
+	public void update(Object object);
+	
+	public void del(Object object);
+}

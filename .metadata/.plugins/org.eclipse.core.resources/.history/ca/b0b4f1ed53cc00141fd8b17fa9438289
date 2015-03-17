@@ -1,0 +1,60 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+public class BaseDao extends HibernateDaoSupport implements BaseDaoImp {
+
+public List getAllInfos(String hql){
+		
+		return super.getHibernateTemplate().find(hql);
+	}
+
+	public void add(Object object) {
+		// TODO Auto-generated method stub
+		super.getHibernateTemplate().save(object);
+	}
+
+	public void del(Object object) {
+		// TODO Auto-generated method stub
+		super.getHibernateTemplate().delete(object);
+	}
+
+	public Object getInfosByID(Class cl, int id) {
+		// TODO Auto-generated method stub
+		return super.getHibernateTemplate().get(cl, id);
+	}
+
+	public void update(Object object) {
+		// TODO Auto-generated method stub
+		super.getHibernateTemplate().update(object);
+	}
+
+	public void add(String hql, Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void del(String hql, Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public List queryAllInfos(String hql, Object object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void queryById(String hql, Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void update(String hql, Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+ 

@@ -1,0 +1,72 @@
+package vo;
+
+/**
+ * DeptId entity. @author MyEclipse Persistence Tools
+ */
+
+public class DeptId implements java.io.Serializable {
+
+	// Fields
+
+	private Integer did;
+	private String dname;
+
+	// Constructors
+
+	/** default constructor */
+	public DeptId() {
+	}
+
+	/** full constructor */
+	public DeptId(Integer did, String dname) {
+		this.did = did;
+		this.dname = dname;
+	}
+
+	// Property accessors
+
+	public Integer getDid() {
+		return this.did;
+	}
+
+	public void setDid(Integer did) {
+		this.did = did;
+	}
+
+	public String getDname() {
+		return this.dname;
+	}
+
+	public void setDname(String dname) {
+		this.dname = dname;
+	}
+
+	public boolean equals(Object other) {
+		if ((this == other))
+			return true;
+		if ((other == null))
+			return false;
+		if (!(other instanceof DeptId))
+			return false;
+		DeptId castOther = (DeptId) other;
+
+		return ((this.getDid() == castOther.getDid()) || (this.getDid() != null
+				&& castOther.getDid() != null && this.getDid().equals(
+				castOther.getDid())))
+				&& ((this.getDname() == castOther.getDname()) || (this
+						.getDname() != null
+						&& castOther.getDname() != null && this.getDname()
+						.equals(castOther.getDname())));
+	}
+
+	public int hashCode() {
+		int result = 17;
+
+		result = 37 * result
+				+ (getDid() == null ? 0 : this.getDid().hashCode());
+		result = 37 * result
+				+ (getDname() == null ? 0 : this.getDname().hashCode());
+		return result;
+	}
+
+}

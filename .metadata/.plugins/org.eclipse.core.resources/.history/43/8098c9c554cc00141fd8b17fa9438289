@@ -1,0 +1,35 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+public class BaseDao extends HibernateDaoSupport implements BaseDaoImp {
+
+	public void add(String hql, Object object) {
+		// TODO Auto-generated method stub
+		getSqlSession().insert(hql, object);
+	}
+
+	public void del(String hql, Object object) {
+		// TODO Auto-generated method stub
+		getSqlSession().delete(hql, object);
+	}
+
+	public List queryAllInfos(String hql, Object object) {
+		// TODO Auto-generated method stub
+		return getSqlSession().selectList(hql, object);
+	}
+
+	public void queryById(String hql, Object object) {
+		// TODO Auto-generated method stub
+		getSqlSession().selectOne(hql, object);
+	}
+
+	public void update(String hql, Object object) {
+		// TODO Auto-generated method stub
+		getSqlSession().update(hql, object);
+	}
+	
+}
+ 

@@ -1,0 +1,22 @@
+2015-03-17 10:53:55,565 0      [      Worker-14] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2015-03-17 10:53:55,567 2      [      Worker-14] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+2015-03-17 10:53:55,674 109    [      Worker-14] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in dept. Asking rev.eng. strategy
+2015-03-17 10:53:55,674 109    [      Worker-14] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for dept
+2015-03-17 10:54:59,430 63865  [      Worker-15] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2015-03-17 10:54:59,431 63866  [      Worker-15] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+2015-03-17 10:54:59,935 64370  [      Worker-15] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in dept. Asking rev.eng. strategy
+2015-03-17 10:54:59,935 64370  [      Worker-15] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for dept
+2015-03-17 10:55:34,142 98577  [       Worker-9] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2015-03-17 10:55:34,142 98577  [       Worker-9] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+2015-03-17 10:55:34,166 98601  [       Worker-9] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in dept. Asking rev.eng. strategy
+2015-03-17 10:55:34,166 98601  [       Worker-9] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for dept
+2015-03-17 10:56:34,597 159032 [      Worker-12] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2015-03-17 10:56:34,597 159032 [      Worker-12] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+2015-03-17 10:56:34,623 159058 [      Worker-12] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in dept. Asking rev.eng. strategy
+2015-03-17 10:56:34,623 159058 [      Worker-12] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for dept
+2015-03-17 10:57:24,964 209399 [      Worker-16] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2015-03-17 10:57:24,964 209399 [      Worker-16] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+2015-03-17 10:57:24,993 209428 [      Worker-16] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in dept. Asking rev.eng. strategy
+2015-03-17 10:57:24,993 209428 [      Worker-16] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for dept
+2015-03-17 11:02:28,007 512442 [      Worker-14] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document is invalid: no grammar found.
+2015-03-17 11:02:28,007 512442 [      Worker-14] ERROR   org.hibernate.util.XMLHelper  - Error parsing XML: D:\Workspaces\DemoSSH\src\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".

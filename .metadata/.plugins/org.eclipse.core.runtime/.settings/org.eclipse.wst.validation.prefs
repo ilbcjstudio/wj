@@ -1,0 +1,26 @@
+#Mon Jan 05 18:17:21 CST 2015
+vals/org.eclipse.jst.jsp.core.TLDValidator/global=TF01
+vals/org.eclipse.jst.jsp.core.JSPContentValidator/global=TF01
+vals/org.eclipse.wst.dtd.core.dtdDTDValidator/global=TF01
+vals/com.genuitec.eclipse.struts2.Struts2Validator/global=TF01
+USER_PREFERENCE=saveAutomaticallyfalseprojectsCanOverridetruedisableAllValidationfalseversion1.2.104.me201003160859
+vals/org.eclipse.jst.jsf.ui.JSFAppConfigValidator/global=TF01
+DELEGATES_PREFERENCE=delegateValidatorList
+vals/com.genuitec.javascript.wst.integration.JSValidator/global=TF01
+eclipse.preferences.version=1
+vals/org.eclipse.jst.jsp.core.JSPBatchValidator/global=TF01
+override=true
+vf.version=3
+confirmDialog=true
+vals/org.eclipse.jst.jsf.ui.JSFNonELAttributeValueValidator/global=TF01
+vals/com.genuitec.eclipse.j2eedt.core.ddvalidator/global=TF01
+stateTS=0
+vals/org.eclipse.wst.xsl.core.xsl/global=TF02
+suspend=false
+vals/org.eclipse.wst.xsd.core.xsd/global=TF02162org.eclipse.wst.xsd.core.internal.validation.eclipse.Validator
+USER_MANUAL_PREFERENCE=enabledManualValidatorListorg.eclipse.dali.packaging.internal.validator.PackagingValidator;org.eclipse.wst.common.componentcore.internal.ModuleCoreValidator;com.genuitec.eclipse.persistence.jpa.core.EntityValidator;com.genuitec.eclipse.reporting.validator.ReportValidator;org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;com.genuitec.eclipse.jsf.facelets.FaceletsValidator;
+vals/org.eclipse.wst.html.ui.HTMLValidator/global=TF01
+vals/org.eclipse.wst.wsdl.validation.wsdl/global=TF02158org.eclipse.wst.wsdl.validation.internal.eclipse.Validator
+USER_BUILD_PREFERENCE=enabledBuildValidatorListorg.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;
+vals/org.eclipse.wst.xml.core.xml/global=TF03
+saveAuto=false

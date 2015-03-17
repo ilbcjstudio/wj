@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>jswh.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+ 	<script type="text/javascript" src="js/jquery-easyui-1.3.2/jquery-1.8.0.min.js"/ ></script>
+	<script type="text/javascript" src="js/jquery-easyui-1.3.2/jquery.easyui.min.js"/ ></script>
+		
+  <link rel="stylesheet" href="js/jquery-easyui-1.3.2/themes/icon.css" type="text/css"></link>
+  <link rel="stylesheet" href="js/jquery-easyui-1.3.2/themes/default/easyui.css" type="text/css"></link>
+  
+  	<style type="text/css">
+
+	.table{
+		background-color:ashen;
+		font-size: 13px;	
+	}
+	</style>
+	
+   <script type="text/javascript">
+	$(function(){
+		$("#t1").datagrid({
+  	  	  	url:"",
+//  	  	  	iconCls:'icon-save',
+  	  		columns:[[
+  	  			{field:'',checkbox:true},
+  		  	  	{field:'did',title:'机构名称'},
+  		  	  	{field:'dname',title:'机构编码'}
+  		  	  	]],
+  		  	toolbar:[{
+				text:'增加',
+				iconCls:'icon-add',
+				handler	:function(){alert('add')}
+			},{
+				text:'修改',
+				iconCls:'icon-edit',
+				handler	:function(){alert('edit')}
+			},{
+				text:'删除',
+				iconCls:'icon-remove',
+				handler	:function(){alert('remove')}
+			}],
+			pagination:true //分页插件
+  	  	  	  });
+	});
+  	  	 
+	
+   </script>
+
+  </head>
+  
+  <body class="easyui-layout">
+  <div data-options="region:'west'" style="width:150px;" >
+	<ul id="tt" class="easyui-tree">   
+    <li>   
+        <span>A部门</span>   
+        <ul>   
+            <li>   
+                <span>a</span>   
+                <ul>   
+                    <li>   
+                        <span>北京队</span>   
+                    </li>   
+                    <li>   
+                        <span>上海队</span>   
+                    </li>    
+                </ul>   
+            </li>   
+            <li>   
+                <span>aaa</span>   
+            </li>   
+            <li>   
+                <span>bbb</span>   
+            </li>   
+             <li>   
+                <span>ccc</span>   
+            </li>  
+        </ul>
+        <ul>   
+            <li>   
+                <span>dd</span>   
+                <ul>   
+                    <li>   
+                        <span>杭州队</span>   
+                    </li>   
+                    <li>   
+                        <span>广州队</span>   
+                    </li>    
+                </ul>   
+            </li>   
+            <li>   
+                <span>ee</span>   
+            </li>   
+            <li>   
+                <span>ff</span>   
+            </li>     
+        </ul>      
+    </li>  
+</ul> 
+	</div>
+	<div data-options="region:'center'" >
+		<table bgcolor="blue" border="0" cellspacing="1" class="table" align="center" width="100%">
+		  <tbody>   
+			<tr bgcolor="white">
+				<td align="right">机构名称</td>
+				<td><input type="text" ></td>
+				<td align="right">机构编码</td>
+				<td><input type="text" ></td>
+				<td><a id="btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'">高级查询</a></td>
+			</tr>
+		  </tbody>
+		</table>
+		
+		 <table id="t1"></table>
+	 <table border="1">
+	<th>部门编号</th>   
+	<th>部门名称</th>
+	<th>部门地址</th> 
+	<th>操作</th>
+	<s:iterator value="dList" var="dl">
+	<tr >
+		<td>${dl.did }</td>
+		<td>${dl.dname }</td>
+		<td>${dl.loc }</td>
+		<td>
+			<a href="a1!updateBef.action?d.did=${dl.did }">修改</a>
+			<a href="a1!del.action?d.did=${dl.did }&&emps.did=${dl.did }">删除</a>
+		</td>
+	</tr>
+	</s:iterator>
+	</table>
+	</div>
+	
+
+  </body>
+</html>

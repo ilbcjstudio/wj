@@ -1,0 +1,19 @@
+package vo;
+
+/**
+ * DeptId entity. @author MyEclipse Persistence Tools
+ */
+public class DeptId extends AbstractDeptId implements java.io.Serializable {
+
+	// Constructors
+
+	/** default constructor */
+	public DeptId() {
+	}
+
+	/** full constructor */
+	public DeptId(Integer did, String dname) {
+		super(did, dname);
+	}
+
+}
