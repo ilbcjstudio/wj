@@ -1,4 +1,6 @@
-#Thu Mar 05 16:53:42 CST 2015
+#Wed Mar 18 09:56:23 CST 2015
 eclipse.preferences.version=1
+DEBUG.consoleOpenOnOut=false
 preferredTargets=default\:default|
+DEBUG.consoleOpenOnErr=false
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n

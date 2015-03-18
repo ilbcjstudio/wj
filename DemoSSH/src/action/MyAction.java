@@ -22,10 +22,6 @@ public class MyAction {
 	public String getAllInfos(){
 		String wherehql="from Dept where 1=1 ";
 		
-//		if(dept!=null&&!"".equals(dept.getDname())&&dept.getDname()!=null){
-//			wherehql=wherehql+" and dname like '%"+dept.getDname()+"%' ";
-//		}
-		
 		dList=baseDao.queryAllInfos(wherehql,null);
 		System.out.println(123);
 		return "GETALLINFOS";

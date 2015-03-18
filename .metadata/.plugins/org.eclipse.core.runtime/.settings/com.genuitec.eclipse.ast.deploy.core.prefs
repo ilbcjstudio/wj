@@ -1,4 +1,4 @@
-#Tue Mar 17 18:12:43 CST 2015
+#Wed Mar 18 16:07:41 CST 2015
 tomcat6Server.DemoSSH.type=WebDeployment
 tomcat6Server.DemoSSH.isExploded=true
 tomcat6Server.DemoSSH.isUptoDate=true
@@ -10,4 +10,4 @@ tomcat6Server.DemoSSH.isDeployed=true
 eclipse.preferences.version=1
 tomcat6Server.DemoSSH.deployIsOverProject=false
 tomcat6Server.DemoSSH.IEARProjectName=
-tomcat6Server.DemoSSH.shouldBackup=true
+tomcat6Server.DemoSSH.shouldBackup=false

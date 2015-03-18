@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>jgwh.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    
+  <script type="text/javascript" src="../js/jquery-easyui-1_4_2/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-easyui-1_4_2/jquery.easyui.min.js"></script>
+  
+  <link rel="stylesheet" href="../js/jquery-easyui-1_4_2/themes/icon.css" type="text/css"></link>
+  <link rel="stylesheet" href="../js/jquery-easyui-1_4_2/themes/default/easyui.css" type="text/css"></link>
+  
+  	<style type="text/css">
+
+	.table{
+		background-color:ashen;
+		font-size: 13px;	
+	}
+	</style>
+	
+   <script type="text/javascript">
+	$(function(){
+	
+	alert("jgwh");
+	
+		$("#t1").datagrid({
+  	  	  	url:"",
+  	  		columns:[[
+  	  			{field:'',checkbox:true},
+  		  	  	{field:'11',title:'机构名称'},
+  		  	  	{field:'22',title:'机构编码'}
+  		  	  	]],
+  		  	toolbar:[{
+				text:'增加',
+				iconCls:'icon-add',
+				handler	:function(){alert('add')}
+			},{
+				text:'修改',
+				iconCls:'icon-edit',
+				handler	:function(){alert('edit')}
+			},{
+				text:'删除',
+				iconCls:'icon-remove',
+				handler	:function(){alert('remove')}
+			}],
+			pagination:true //分页插件
+  	  	  	  });
+	});
+  	  	 
+	
+
+   </script>
+  
+  </head>
+  
+  <body class="easyui-layout">
+  <div data-options="region:'west'" style="width:150px;" >
+	<ul id="tt" class="easyui-tree">   
+    <li>   
+        <span>A部门</span>   
+        <ul>   
+            <li>   
+                <span>a</span>   
+                <ul>   
+                    <li>   
+                        <span>北京队</span>   
+                    </li>   
+                    <li>   
+                        <span>上海队</span>   
+                    </li>    
+                </ul>   
+            </li>   
+            <li>   
+                <span>aaa</span>   
+            </li>   
+            <li>   
+                <span>bbb</span>   
+            </li>   
+             <li>   
+                <span>ccc</span>   
+            </li>  
+        </ul>
+        <ul>   
+            <li>   
+                <span>dd</span>   
+                <ul>   
+                    <li>   
+                        <span>杭州队</span>   
+                    </li>   
+                    <li>   
+                        <span>广州队</span>   
+                    </li>    
+                </ul>   
+            </li>   
+            <li>   
+                <span>ee</span>   
+            </li>   
+            <li>   
+                <span>ff</span>   
+            </li>     
+        </ul>      
+    </li>  
+	</ul> 
+</div>
+	<div data-options="region:'center'" >
+		<table bgcolor="blue" border="0" cellspacing="1" class="table" align="center" width="100%">
+		  <tbody>   
+			<tr bgcolor="white">
+				<td align="right">机构名称</td>
+				<td><input type="text" ></td>
+				<td align="right">机构编码</td>
+				<td><input type="text" ></td>
+				<td><a id="btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'">高级查询</a></td>
+			</tr>
+		  </tbody>
+		</table>
+
+		
+		 <table id="t1"></table>
+	</div>
+	
+	<div class="easyui-panel" collapsible="true" fit="true" border="false" collapsible="true">
+ <div class="easyui-layout" fit="true">
+ <div data-options="region:'north',title:'当前页面:咨询管理-->咨询跟踪' " style="height:155px;">
+ <div>
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" id="btnQuery">查询</a>|
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" id="btnHuiFang">跟踪</a>|
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" id="btnBoming">报名</a>|
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" id="btnDingWei">订位</a>
+ <hr />
+ </div> 
+ <div style="position: absolute;" >
+ <table cellspacing="10" >
+ <tr>
+ <td align="right">姓名:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入姓名" validType="length[1,20]" maxlength="21" type="text" id="names" name="names" maxlength="15" style="width: 100px;height:15px;" /></td>
+ <td align="right">手机:</td>
+ <td align="left">
+ <input type="text" class="easyui-validatebox" required="true" missingMessage="请输入手机号码" validType="length[1,11]" maxlength="12" id="phone" name="phone" maxlength="12" onkeyup="value=value.replace(/[^\d]/g,'')" style="width: 100px;height:15px;" /></td>
+ <td align="right">转介绍人:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入转介绍人" validType="length[1,20]" maxlength="21" type="text" id="matchmaker" name="matchmaker" style="width:100px;height:15px;" /></td>
+ <td align="right">转介人班级:</td>
+ <td align="left">
+ <input id="csid" class="easyui-combobox" style="width: 100px;" name="csid"
+ data-options="valueField:'csid',textField:'csid',url:'stuClass/selectStudentClass'" value="全部" editable="false"/>
+ </td>
+ <td align="right">咨询日期:</td>
+ <td align="left"><input type="text" style="width:100px;" id="conDate" name="conDate" onClick="WdatePicker()" class="Wdate" readonly="readonly" editable="false"></td>
+ <td align="center">至</td>
+ <td align="left"><input style="width:100px;" type="text" id="endtime" name="endtime" onClick="WdatePicker()"class="Wdate" readonly="readonly" editable="false"></td>
+ </tr>
+ <tr>
+ <td align="right">地址:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入地址" validType="length[1,150]" maxlength="151" type="text" id="address" name="address" style="width: 100px;height:15px;" /></td>
+
+ <td align="right">QQ:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入QQ" validType="length[1,20]" maxlength="21" type="text" onkeyup="value=value.replace(/[^\d]/g,'')" id="qq" name="qq" style="width: 100px;height:15px;" /></td>
+
+ <td align="right">是否分配:</td>
+ <td align="left">
+ <select class="easyui-combobox" id="dept" editable="false" name="dept" panelHeight="auto"style="width:103px;"> 
+ <option value="bb">全部</option> 
+ <option>是</option> 
+ <option>否</option>
+ </select>
+ </td>
+
+ <td align="right">是否转介绍:</td> 
+ <td align="left"><select class="easyui-combobox"id="whethervisit" name="whethervisit" style="width:100px;" editable="false">
+ <option >全部</option>
+ <option >是</option>
+ <option >否</option>
+ </select></td>
+ <td align="right">来源渠道:</td> 
+ <td align="left"><input id="informationsources" class="easyui-combobox" style="width: 103px;" name="informationsources" 
+ data-options="valueField:'value',textField:'value',url:'queryInformation'" value="全部" panelHeight="auto" editable="false"/> </td>
+ <td align="right">咨询人员:</td>
+ <td align="left">
+ <select id="allot" class="easyui-combobox" editable="false"
+ data-options="valueField:'uid',textField:'name',url:'users/queryConsultant'" name="allot" style="width:103px;" panelHeight="auto" > 
+ </select>
+ </td> 
+ </tr>
+ </table> 
+ </div> 
+</div>
+ <div style="width:auto; margin:155px " class="easyui-layout"></div>
+ <table id="dg"style="height:370px;" ></table>
+ </div>
+</div>
+
+  </body>
+</html>
