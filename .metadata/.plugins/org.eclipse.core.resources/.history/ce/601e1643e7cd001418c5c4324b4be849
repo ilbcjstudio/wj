@@ -1,0 +1,100 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'index.jsp' starting page</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+	  <script type="text/javascript" src="js/jquery-easyui-1_4_2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-easyui-1_4_2/jquery.easyui.min.js"></script>
+  
+  <link rel="stylesheet" href="js/jquery-easyui-1_4_2/themes/icon.css" type="text/css"></link>
+  <link rel="stylesheet" href="js/jquery-easyui-1_4_2/themes/default/easyui.css" type="text/css"></link>
+  
+  </head>
+  
+  <body>
+<div class="easyui-panel" collapsible="true" fit="true" border="false" collapsible="true">
+ <div class="easyui-layout" fit="true">
+ <div data-options="region:'north',title:'当前页面:咨询管理-->咨询跟踪' " style="height:155px;">
+ <div>
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" id="btnQuery">查询</a>|
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" id="btnHuiFang">跟踪</a>|
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" id="btnBoming">报名</a>|
+ <a class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" id="btnDingWei">订位</a>
+ <hr />
+ </div> 
+ <div style="position: absolute;" >
+ <table cellspacing="10" >
+ <tr>
+ <td align="right">姓名:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入姓名" validType="length[1,20]" maxlength="21" type="text" id="names" name="names" maxlength="15" style="width: 100px;height:15px;" /></td>
+ <td align="right">手机:</td>
+ <td align="left">
+ <input type="text" class="easyui-validatebox" required="true" missingMessage="请输入手机号码" validType="length[1,11]" maxlength="12" id="phone" name="phone" maxlength="12" onkeyup="value=value.replace(/[^\d]/g,'')" style="width: 100px;height:15px;" /></td>
+ <td align="right">转介绍人:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入转介绍人" validType="length[1,20]" maxlength="21" type="text" id="matchmaker" name="matchmaker" style="width:100px;height:15px;" /></td>
+ <td align="right">转介人班级:</td>
+ <td align="left">
+ <input id="csid" class="easyui-combobox" style="width: 100px;" name="csid"
+ data-options="valueField:'csid',textField:'csid',url:'stuClass/selectStudentClass'" value="全部" editable="false"/>
+ </td>
+ <td align="right">咨询日期:</td>
+ <td align="left"><input type="text" style="width:100px;" id="conDate" name="conDate" onClick="WdatePicker()" class="Wdate" readonly="readonly" editable="false"></td>
+ <td align="center">至</td>
+ <td align="left"><input style="width:100px;" type="text" id="endtime" name="endtime" onClick="WdatePicker()"class="Wdate" readonly="readonly" editable="false"></td>
+ </tr>
+ <tr>
+ <td align="right">地址:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入地址" validType="length[1,150]" maxlength="151" type="text" id="address" name="address" style="width: 100px;height:15px;" /></td>
+
+ <td align="right">QQ:</td>
+ <td align="left"><input class="easyui-validatebox" required="true" missingMessage="请输入QQ" validType="length[1,20]" maxlength="21" type="text" onkeyup="value=value.replace(/[^\d]/g,'')" id="qq" name="qq" style="width: 100px;height:15px;" /></td>
+
+ <td align="right">是否分配:</td>
+ <td align="left">
+ <select class="easyui-combobox" id="dept" editable="false" name="dept" panelHeight="auto"style="width:103px;"> 
+ <option value="bb">全部</option> 
+ <option>是</option> 
+ <option>否</option>
+ </select>
+ </td>
+
+ <td align="right">是否转介绍:</td> 
+ <td align="left"><select class="easyui-combobox"id="whethervisit" name="whethervisit" style="width:100px;" editable="false">
+ <option >全部</option>
+ <option >是</option>
+ <option >否</option>
+ </select></td>
+ <td align="right">来源渠道:</td> 
+ <td align="left"><input id="informationsources" class="easyui-combobox" style="width: 103px;" name="informationsources" 
+ data-options="valueField:'value',textField:'value',url:'queryInformation'" value="全部" panelHeight="auto" editable="false"/> </td>
+ <td align="right">咨询人员:</td>
+ <td align="left">
+ <select id="allot" class="easyui-combobox" editable="false"
+ data-options="valueField:'uid',textField:'name',url:'users/queryConsultant'" name="allot" style="width:103px;" panelHeight="auto" > 
+ </select>
+ </td> 
+ </tr>
+ </table> 
+ </div> 
+</div>
+ <div style="width:auto; margin:155px " class="easyui-layout"></div>
+ <table id="dg"style="height:370px;" ></table>
+ </div>
+</div>
+
+</body>

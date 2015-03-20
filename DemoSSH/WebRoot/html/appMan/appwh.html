@@ -18,7 +18,8 @@
   	<style type="text/css">
 
 	.table{
-		background-color:ashen;
+		width:100%;
+		background-color:#CCCCCC;
 		font-size: 13px;	
 	}
 	</style>
@@ -29,7 +30,7 @@
 //		alert("appwh");
 	
 		$("#t1").datagrid({
-  	  	  	url:"",
+  	  	  	url:"a1!getAllInfos.action",
   	  		columns:[[
   	  			{field:'',checkbox:true},
   		  	  	{field:'11',title:'应用名称'},
@@ -38,7 +39,9 @@
   		  	toolbar:[{
 				text:'增加',
 				iconCls:'icon-add',
-				handler	:function(){alert('add')}
+				handler	:function(){
+				 	document.location.href="whInfoAdd.html";
+				}
 			},{
 				text:'修改',
 				iconCls:'icon-edit',
@@ -60,8 +63,7 @@
   </head>
   
   <body >
-	<table bgcolor="blue" border="0" cellspacing="1" class="table" align="center" width="100%">
-<!--	<table class="easyui-datagrid">-->
+	<table border="0" cellspacing="1" class="table">
 	  <tbody>   
 		<tr bgcolor="white">
 			<th align="right">应用名称</th>
@@ -74,6 +76,6 @@
 	</table>
 		
 	<table id="t1"></table>
-
+  
   </body>
 </html>

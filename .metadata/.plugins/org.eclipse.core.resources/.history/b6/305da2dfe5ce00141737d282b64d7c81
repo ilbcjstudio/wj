@@ -1,0 +1,48 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<%@taglib prefix="s" uri="/struts-tags" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'infos.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+  </head>
+  
+  <body>
+  <a href="add.jsp">添加</a>
+  <s:form action="a1!getAllInfos.action" theme="simple">
+  	部门名称：<s:textfield name="d.dname"></s:textfield>
+  	<s:submit value="查询"></s:submit>
+  </s:form>
+    <table border="1">
+	<th>部门编号</th>   
+	<th>部门名称</th>
+	<th>操作</th>
+	<s:iterator value="dList" var="dl">
+	<tr >
+		<td>${dl.did }</td>
+		<td>${dl.dname }</td>
+		<td>
+			<a href="a1!updateBef.action?d.did=${dl.did }">修改</a>
+			<a href="a1!del.action?d.did=${dl.did }&&emps.did=${dl.did }">删除</a>
+		</td>
+	</tr>
+	</s:iterator>
+    </table>
+  </body>
+</html>

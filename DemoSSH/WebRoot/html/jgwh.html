@@ -18,7 +18,8 @@
   	<style type="text/css">
 
 	.table{
-		background-color:ashen;
+		width:100%;
+		background-color:#CCCCCC;
 		font-size: 13px;	
 	}
 	</style>
@@ -61,7 +62,7 @@
   
   <body class="easyui-layout">
   <div data-options="region:'west'" style="width:150px;" >
-	<ul id="tt" class="easyui-tree">   
+	<ul id="tt" class="easyui-tree" data-options="lines:true">   
     <li>   
         <span>A部门</span>   
         <ul>   
@@ -109,9 +110,9 @@
 	</ul> 
 </div>
 	<div data-options="region:'center'" >
-		<table bgcolor="blue" border="0" cellspacing="1" class="table" align="center" width="100%">
+		<table border="0" cellspacing="1" class="table">
 		  <tbody>   
-			<tr bgcolor="white">
+			<tr bgcolor="#FFFFFF">
 				<td align="right">机构名称</td>
 				<td><input type="text" ></td>
 				<td align="right">机构编码</td>

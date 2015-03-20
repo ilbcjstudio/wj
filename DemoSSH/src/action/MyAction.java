@@ -22,8 +22,8 @@ public class MyAction {
 	public String getAllInfos(){
 		String wherehql="from Dept where 1=1 ";
 		
-		dList=baseDao.queryAllInfos(wherehql,null);
-		System.out.println(123);
+		dList=baseDao.queryAllInfos(wherehql);
+
 		return "GETALLINFOS";
 	}
 	

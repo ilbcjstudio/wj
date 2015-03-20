@@ -1,0 +1,16 @@
+package action;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import dao.IBaseDao;
+
+public class Test {
+	public static void main(String[] args) {
+		ApplicationContext ac=new ClassPathXmlApplicationContext("/applicationContext.xml");
+		IBaseDao ibd=(IBaseDao) ac.getBean("baseDao");
+		
+		ibd.queryAllInfos("from Dept2",null);
+	}
+	
+}
