@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+	
+<!--<import resource="applicationContext_bean.xml"/>  -->
+<!--<import resource="applicationContext_db.xml"/>  -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/mysql">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+	</bean>
+  
+    <!--定义Hibernate的SessionFactory -->  
+    <bean id="sessionFactory"  
+        class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">  
+        <!-- 定义SessionFactory必须注入dataSource -->  
+        <property name="dataSource">  
+            <ref bean="dataSource" />  
+        </property>  
+        <!-- 定义Hibernate的SessionFactory属性 -->  
+        <property name="hibernateProperties">  
+            <props>  
+                <prop key="hibernate.dialect">  
+                    org.hibernate.dialect.Oracle10gDialect  
+                </prop>  
+            </props>  
+        </property>  
+  
+        <!-- 定义POJO的映射文件 -->  
+        <property name="mappingResources">  
+            <list>  
+                <value>com/model/Student.hbm.xml</value>  
+            </list>  
+        </property>  
+    </bean>  
+  
+    <!-- 配置事务拦截器 -->  
+    <bean id="transactionManager"  
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager">  
+        <property name="sessionFactory" ref="sessionFactory" />  
+    </bean>  
+  
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">  
+        <tx:attributes>  
+            <tx:method name="save*" propagation="REQUIRED" />            
+             C只有一sav、delete、updaCte开头的方法才能执行增删改操作   
+            <tx:method name="delete*" propagation="REQUIRED" />  
+            <tx:method name="update*" propagation="REQUIRED" />  
+            <tx:method name="*" propagation="SUPPORTS" read-only="true" />           
+<!--              其他方法为只读方法   -->
+        </tx:attributes>  
+    </tx:advice>  
+<!--  -->
+    <aop:config>  
+        <aop:pointcut id="interceptorPointCuts"  expression="execution(* com.serviceImpl..*.*(..))" />   
+<!--        对应实现类接口的包的位置   -->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="interceptorPointCuts" />  
+    </aop:config>  
+    
+       <!-- 业务层Service --> 
+    <bean id="dept_service" class="com.serviceImp.DeptServiceImpl">  
+        <property name="sessionFactory">  
+             <ref bean="sessionFactory"></ref>  
+        </property>  
+    </bean>  
+  
+    <!-- 控制层Action -->  
+    <bean id="dept_action" class="com.action.DeptAction">  
+        <property name="ds">  
+             <ref bean="dept_service" />  
+        </property>  
+    </bean>
+</beans>

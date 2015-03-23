@@ -2,47 +2,27 @@ package action;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 import bean.Dept;
 
 import dao.BaseDao;
 
-//@Controller
 public class MyAction {
-	private List dList;
 	private BaseDao baseDao;
 	private Dept dept;
+
 	
-	public String getAllInfos(){
-		String wherehql="from Dept where 1=1 ";
+	public String getAllInfos() throws Exception{
+		String wherehql="from Dept";
 		
-		dList=baseDao.queryAllInfos(wherehql);
+		List dList=baseDao.queryAllInfos(wherehql);
 
 		return "GETALLINFOS";
 	}
 	
-//	@RequestMapping("/queryDept")
-//	public ModelAndView queryDept(){
-//		List dList=baseDao.queryAllInfos("dept.queryDept",null);
-//		
-//		return  new ModelAndView("/html/jgwh.html","dList",dList);
-//	}
-
 	
-	
-	public List getdList() {
-		return dList;
-	}
 
-	public void setdList(List dList) {
-		this.dList = dList;
-	}
+
 
 	public BaseDao getBaseDao() {
 		return baseDao;
@@ -59,6 +39,7 @@ public class MyAction {
 	public void setDept(Dept dept) {
 		this.dept = dept;
 	}
+
 
 
 }

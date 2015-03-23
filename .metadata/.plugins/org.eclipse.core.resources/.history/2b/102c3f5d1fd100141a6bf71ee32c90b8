@@ -1,0 +1,81 @@
+package action;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.ServletActionContext;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+import net.sf.json.JSONObject;
+
+import bean.Dept;
+
+import dao.BaseDao;
+
+//@Controller
+public class MyAction {
+	private List dList;
+	private BaseDao baseDao;
+	private Dept dept;
+    private JSONObject jsonObj;
+	
+	public String getAllInfos(){
+		String wherehql="from Dept where 1=1 ";
+		
+		dList=baseDao.queryAllInfos(wherehql);
+
+		return "GETALLINFOS";
+	}
+	
+//	@RequestMapping("/queryDept")
+//	public ModelAndView queryDept(){
+//		List dList=baseDao.queryAllInfos("dept.queryDept",null);
+//		
+//		return  new ModelAndView("/html/jgwh.html","dList",dList);
+//	}
+    //转化为Json格式  
+    public void toBeJson(List list,int total) throws Exception{  
+         HttpServletResponse response = ServletActionContext.getResponse();  
+         HttpServletRequest request = ServletActionContext.getRequest();  
+           
+         JSONObject jobj = new JSONObject();//new一个JSON  
+         jobj.accumulate("total",total );//total代表一共有多少数据  
+         jobj.accumulate("rows", list);//row是代表显示的页的数据  
+
+         response.setCharacterEncoding("utf-8");//指定为utf-8  
+         response.getWriter().write(jobj.toString());//转化为JSOn格式  
+           
+//         log.info(jobj.toString());  
+         System.out.println(jobj.toString());
+    }  
+	
+	
+	public List getdList() {
+		return dList;
+	}
+
+	public void setdList(List dList) {
+		this.dList = dList;
+	}
+
+	public BaseDao getBaseDao() {
+		return baseDao;
+	}
+
+	public void setBaseDao(BaseDao baseDao) {
+		this.baseDao = baseDao;
+	}
+
+	public Dept getDept() {
+		return dept;
+	}
+
+	public void setDept(Dept dept) {
+		this.dept = dept;
+	}
+
+
+}

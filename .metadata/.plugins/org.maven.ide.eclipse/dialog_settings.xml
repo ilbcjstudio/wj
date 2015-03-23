@@ -2,10 +2,10 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
-			<item value="DemoSSH"/>
+			<item value="eayui"/>
 		</list>
 		<list key="artifactId">
-			<item value="DemoSSH"/>
+			<item value="eayui"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>

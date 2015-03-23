@@ -1,0 +1,106 @@
+package action;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.ServletActionContext;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import service.BaseService;
+import service.BaseServiceImp;
+import net.sf.json.JSONObject;
+
+import bean.Dept;
+
+import dao.BaseDao;
+
+//@Controller
+public class MyAction {
+	private BaseDao baseDao;
+	private Dept dept;
+    private JSONObject jsonObj;
+    private String rows;// 每页显示的记录数  
+    private String page;// 当前第几页
+//    private BaseServiceImp bsi;
+    private BaseService bService;
+	
+	public String getAllInfos() throws Exception{
+		System.out.println("查询所有");
+		List dList=bService.getList(page, rows);
+		this.toBeJson(dList, bService.getTotal());
+		return null;
+	}
+	
+    //转化为Json格式  
+    public void toBeJson(List list,int total) throws Exception{  
+         HttpServletResponse response = ServletActionContext.getResponse();  
+         HttpServletRequest request = ServletActionContext.getRequest();  
+           
+         JSONObject jobj = new JSONObject();//new一个JSON  
+         jobj.accumulate("total",total );//total代表一共有多少数据  
+         jobj.accumulate("rows", list);//row是代表显示的页的数据  
+
+         response.setCharacterEncoding("utf-8");//指定为utf-8  
+         response.getWriter().write(jobj.toString());//转化为JSOn格式  
+           
+//         log.info(jobj.toString());  
+         System.out.println(jobj.toString());
+    }  
+	
+	
+
+
+	public JSONObject getJsonObj() {
+		return jsonObj;
+	}
+
+	public void setJsonObj(JSONObject jsonObj) {
+		this.jsonObj = jsonObj;
+	}
+
+	public String getRows() {
+		return rows;
+	}
+
+	public void setRows(String rows) {
+		this.rows = rows;
+	}
+
+	public String getPage() {
+		return page;
+	}
+
+	public void setPage(String page) {
+		this.page = page;
+	}
+
+	public BaseService getbService() {
+		return bService;
+	}
+
+	public void setbService(BaseService bService) {
+		this.bService = bService;
+	}
+
+	public BaseDao getBaseDao() {
+		return baseDao;
+	}
+
+	public void setBaseDao(BaseDao baseDao) {
+		this.baseDao = baseDao;
+	}
+
+	public Dept getDept() {
+		return dept;
+	}
+
+	public void setDept(Dept dept) {
+		this.dept = dept;
+	}
+
+
+}

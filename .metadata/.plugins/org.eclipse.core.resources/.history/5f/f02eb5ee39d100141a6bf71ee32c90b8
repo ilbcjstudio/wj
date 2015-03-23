@@ -1,0 +1,59 @@
+package action;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.ServletActionContext;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import service.BaseService;
+import service.BaseServiceImp;
+import net.sf.json.JSONObject;
+
+import bean.Dept;
+
+import dao.BaseDao;
+
+//@Controller
+public class MyAction {
+	private BaseDao baseDao;
+	private Dept dept;
+
+	
+	public String getAllInfos() throws Exception{
+		String wherehql="from Dept where 1=1 ";
+		
+		List dList=baseDao.queryAllInfos(wherehql);
+		System.out.println(123);
+		dList=baseDao.queryAllInfos(wherehql);
+
+		return "GETALLINFOS";
+	}
+	
+	
+
+
+
+	public BaseDao getBaseDao() {
+		return baseDao;
+	}
+
+	public void setBaseDao(BaseDao baseDao) {
+		this.baseDao = baseDao;
+	}
+
+	public Dept getDept() {
+		return dept;
+	}
+
+	public void setDept(Dept dept) {
+		this.dept = dept;
+	}
+
+
+
+}

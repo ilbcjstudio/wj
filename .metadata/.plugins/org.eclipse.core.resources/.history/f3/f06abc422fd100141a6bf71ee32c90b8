@@ -1,0 +1,60 @@
+package com.action;
+
+import java.util.List;
+
+import com.service.DeptService;
+
+import net.sf.json.JSONObject;
+
+public class DeptAction {
+    private JSONObject jsonObj;  
+    private String rows;// 每页显示的记录数  
+    private String page;// 当前第几页  
+    private DeptService ds;//String依赖注入  
+      
+    //查询出所有学生信息  
+    public String getAllStudent() throws Exception {  
+        System.out.println("查询出所有学生信息");        
+          
+        List list = ds.gettList(page, rows);  
+        this.toBeJson(list,ds.getTotal());  
+  
+        return null;  
+    }  
+      
+    //转化为Json格式  
+       public void toBeJson(List list,int total) throws Exception{  
+            HttpServletResponse response = ServletActionContext.getResponse();  
+            HttpServletRequest request = ServletActionContext.getRequest();  
+              
+            JSONObject jobj = new JSONObject();//new一个JSON  
+            jobj.accumulate("total",total );//total代表一共有多少数据  
+            jobj.accumulate("rows", list);//row是代表显示的页的数据  
+  
+            response.setCharacterEncoding("utf-8");//指定为utf-8  
+            response.getWriter().write(jobj.toString());//转化为JSOn格式  
+              
+            log.info(jobj.toString());  
+       }  
+         
+  
+    public StudentService getStudent_services() {  
+        return student_services;  
+    }  
+  
+    public void setStudent_services(StudentService student_services) {  
+        this.student_services = student_services;  
+    }  
+  
+    public void setJsonObj(JSONObject jsonObj) {  
+        this.jsonObj = jsonObj;  
+    }  
+  
+    public void setRows(String rows) {  
+        this.rows = rows;  
+    }  
+  
+    public void setPage(String page) {  
+        this.page = page;  
+    }  
+}

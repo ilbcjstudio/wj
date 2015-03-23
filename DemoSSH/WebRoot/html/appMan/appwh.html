@@ -30,11 +30,11 @@
 //		alert("appwh");
 	
 		$("#t1").datagrid({
-  	  	  	url:"a1!getAllInfos.action",
+  	  	  	url:"testgetAllInfos.action",
   	  		columns:[[
   	  			{field:'',checkbox:true},
-  		  	  	{field:'11',title:'应用名称'},
-  		  	  	{field:'22',title:'应用标识'}
+  		  	  	{field:'dname',title:'应用名称'},
+  		  	  	{field:'did',title:'应用标识'}
   		  	  	]],
   		  	toolbar:[{
 				text:'增加',
@@ -56,24 +56,38 @@
 			pagination:true, //分页插件
 			fitColumns:true	//自动调节列宽
   	  	  	  });
+  	  	  	  
+  	  	  	  
+  	  	  	  
 	});
-  	  	 
+	
+	function resetBtn(){
+//		$("input[type=reset]").trigger("click");/*表单重置2*/
+		$("#form1")[0].reset();/*表单重置1*/
+	}
+  	  	
    </script>
 	
   </head>
   
   <body >
+  <form action="" id="form1">
 	<table border="0" cellspacing="1" class="table">
 	  <tbody>   
 		<tr bgcolor="white">
 			<th align="right">应用名称</th>
-			<th><input type="text" ></th>
+			<th><input type="easyui-textbox"></th>
 			<th align="right">应用标识</th>
-			<th><input type="text" ></th>
-			<th><input type="button" value="查询"><input type="reset" value="重置"> </th>
+			<th><input type="easyui-textbox"></th>
+			<th>
+				<a id="btn" href="#" class="easyui-linkbutton" >查询</a>
+				<a id="resetBtn" class="easyui-linkbutton" onclick="resetBtn()"  >重置</a> 
+				<input type="reset" style="display: none;">
+			</th>
 		</tr>
 	  </tbody>
 	</table>
+	</form>
 		
 	<table id="t1"></table>
   

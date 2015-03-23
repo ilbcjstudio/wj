@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>appwh.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  <script type="text/javascript" src="../../js/jquery-easyui-1_4_2/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-easyui-1_4_2/jquery.easyui.min.js"></script>
+  
+  <link rel="stylesheet" href="../../js/jquery-easyui-1_4_2/themes/icon.css" type="text/css"></link>
+  <link rel="stylesheet" href="../../js/jquery-easyui-1_4_2/themes/default/easyui.css" type="text/css"></link>
+  
+  	<style type="text/css">
+
+	.table{
+		width:100%;
+		background-color:#CCCCCC;
+		font-size: 13px;	
+	}
+	</style>
+	
+   <script type="text/javascript"> 
+  	  		
+	$(function(){
+//		alert("appwh");
+	
+		$("#t1").datagrid({
+  	  	  	url:"a1!getAllInfos.action",
+  	  		columns:[[
+  	  			{field:'',checkbox:true},
+  		  	  	{field:'11',title:'应用名称'},
+  		  	  	{field:'22',title:'应用标识'}
+  		  	  	]],
+  		  	toolbar:[{
+				text:'增加',
+				iconCls:'icon-add',
+				handler	:function(){
+				 	document.location.href="whInfoAdd.html";
+				}
+			},{
+				text:'修改',
+				iconCls:'icon-edit',
+				handler	:function(){alert('edit')}
+			},{
+				text:'删除',
+				iconCls:'icon-remove',
+				handler	:function(){alert('remove')}
+			}],
+//			fit:true,
+//			height:"500px",
+			pagination:true, //分页插件
+			fitColumns:true	//自动调节列宽
+  	  	  	  });
+  	  	  	  
+  	  	  	  
+  	  	  	$("button#resetBtn").click(function(){
+  	  	  		
+  	  	  	})
+  	  	  	  
+  	  	  	  
+	});
+  	  	 
+   </script>
+	
+  </head>
+  
+  <body >
+  <form action="">
+	<table border="0" cellspacing="1" class="table">
+	  <tbody>   
+		<tr bgcolor="white">
+			<th align="right">应用名称</th>
+			<th><input type="easyui-textbox" ></th>
+			<th align="right">应用标识</th>
+			<th><input type="easyui-textbox" ></th>
+			<th>
+				<a id="btn" href="#" class="easyui-linkbutton" >查询</a>
+				<a id="resetBtn" href="#" class="easyui-linkbutton" >重置</a> 
+				<input type="reset" style="display: none;">
+			</th>
+		</tr>
+	  </tbody>
+	</table>
+	</form>
+		
+	<table id="t1"></table>
+  
+  </body>
+</html>

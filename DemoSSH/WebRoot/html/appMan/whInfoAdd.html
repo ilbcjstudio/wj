@@ -24,34 +24,16 @@
 
 	</style>
 	
-	<script type="text/javascript">
-		function showTab1_1(){
-			var tab1_1=document.getElementById("tab1_1");
-
-			if(tab1_1.style.display=='none'){
-				tab1_1.style.display='block';
-			}else{
-				tab1_1.style.display='none';
-			}
-		}
+	<script type="text/javascript">	
+		function showTab1(){
+			$("#tab1").toggle();
+		 }
 		function showTab2(){
-			var tab2=document.getElementById("tab2");
-			
-			if(tab2.style.display=='none'){
-				tab2.style.display='block';
-			}else{
-				tab2.style.display='none';
-			}
-		}
-		function showTab3(){
-			var tab3=document.getElementById("tab3");
-			
-			if(tab3.style.display=='none'){
-				tab3.style.display='block';
-			}else{
-				tab3.style.display='none';
-			}
-		}		
+			$("#tab2").toggle();
+		 }
+		 function showTab3(){
+			$("#tab3").toggle();
+		 }		
 	</script>
   
   </head>
@@ -100,10 +82,10 @@
 		</table>
 		<table border="0" cellspacing="1" class="table">
 			<tr bgcolor="#E3EEFF">
-				<td colspan="3"><strong><input type="checkbox" onclick="showTab1_1()">账号类型</strong> </td>
+				<td colspan="3" ><strong><input type="checkbox" onclick="showTab1()">账号类型</strong> </td>
 			</tr>
-			<tr bgcolor="#FFFFFF" style="display: none;" id="tab1_1">
-				<td rowspan="3" width="20%" align="right"><font color="red">*</font>账号类型</td>
+			<tr bgcolor="#FFFFFF" style="display: none;" id="tab1">
+				<td rowspan="3" width="10%" align="right"><font color="red">*</font>账号类型</td>
 				<td>
 				
 					<table border="0" cellspacing="1" class="table">
@@ -111,9 +93,8 @@
 							<td colspan="2"><input type="checkbox" onclick="showTab2()">用户名密码</td>
 						</tr>
 						<tr bgcolor="#FFFFFF" style="display: none;" id="tab2">
-							<td>密码策略</td>
+							<td align="right" width="10%">密码策略</td>
 							<td>
-<!--								<input class="easyui-combobox" />-->
 								<select class="easyui-combobox" data-options="panelHeight:'auto'">
 									<option value=" "> </option>
 					              <option value="系统密码策略">系统密码策略</option>
@@ -127,7 +108,7 @@
 							<td colspan="2"><input type="checkbox" onclick="showTab3()">数字证书</td>
 						</tr>
 						<tr bgcolor="#FFFFFF" style="display: none;" id="tab3">
-							<td>证书策略</td>
+							<td align="right" width="10%">证书策略</td>
 							<td><input type="checkbox" name="gg">pki</td>
 						</tr>
 					</table>
