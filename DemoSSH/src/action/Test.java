@@ -12,7 +12,7 @@ public class Test {
 	public static void main(String[] args) {
 		ApplicationContext ac=new ClassPathXmlApplicationContext("/applicationContext.xml");
 		BaseDaoImp ibd=(BaseDaoImp) ac.getBean("baseDao");
-		ibd.queryAllInfos("from Dept",null);
+		ibd.queryAllInfos("from Dept");
 	}
 	
 }
