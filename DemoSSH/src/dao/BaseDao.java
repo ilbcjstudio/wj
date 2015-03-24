@@ -16,7 +16,7 @@ public class BaseDao extends HibernateDaoSupport implements BaseDaoImp {
 		super.getHibernateTemplate().delete(hql,object);
 	} 
 
-	public List queryAllInfos(String hql) {
+	public List queryAllInfos(String hql, Object object) {
 		// TODO Auto-generated method stub
 		return super.getHibernateTemplate().find(hql);
 	}

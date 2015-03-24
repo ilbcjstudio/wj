@@ -10,11 +10,11 @@
 <fullyQualifiedTypeName name="dao.BaseDaoImp"/>
 <fullyQualifiedTypeName name="service.BaseService"/>
 <fullyQualifiedTypeName name="service.BaseServiceImp"/>
-<fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
 <fullyQualifiedTypeName name="com.service.DeptService"/>
-<fullyQualifiedTypeName name="org.apache.struts2.ServletActionContext"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.apache.struts2.ServletActionContext"/>
+<fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
 </qualifiedTypeNameHistroy>

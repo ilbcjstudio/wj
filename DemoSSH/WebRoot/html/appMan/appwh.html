@@ -30,9 +30,9 @@
 //		alert("appwh");
 	
 		$("#t1").datagrid({
-  	  	  	url:"testgetAllInfos.action",
+  	  	  	url:"a1!getAllInfos.action",
   	  		columns:[[
-  	  			{field:'',checkbox:true},
+  	  			{field:'cb',checkbox:true},
   		  	  	{field:'dname',title:'应用名称'},
   		  	  	{field:'did',title:'应用标识'}
   		  	  	]],
@@ -45,7 +45,14 @@
 			},{
 				text:'修改',
 				iconCls:'icon-edit',
-				handler	:function(){alert('edit')}
+				handler	:function(){
+					if($("#cb").is(':checked')){//选中时的操作
+						document.location.href="whInfoCAdd.html";
+						alert($(this).is(':checked'));
+					}else{//未选中
+					     $.messager.alert("错误","请选择要修改的应用。","error");
+					}
+				}			
 			},{
 				text:'删除',
 				iconCls:'icon-remove',
@@ -53,18 +60,29 @@
 			}],
 //			fit:true,
 //			height:"500px",
-			pagination:true, //分页插件
+			singleSelect:true,//为true时只能选择单行,复选框单选还是多选 
+			pageSize : 5,//默认选择的分页是每页5行数据
+			pageList : [10, 20, 50 ],//可以选择的分页集合
+			pagination : true,//分页,
+	   		rownumbers : true,//行数
+//			pagination:true, //分页插件
 			fitColumns:true	//自动调节列宽
+			
   	  	  	  });
   	  	  	  
   	  	  	  
   	  	  	  
 	});
 	
-	function resetBtn(){
+	function resetBtn(){//表单重置
 //		$("input[type=reset]").trigger("click");/*表单重置2*/
 		$("#form1")[0].reset();/*表单重置1*/
 	}
+	function fuzzyQuery(){//模糊查询
+  			var name_query=$("#name_query").val();
+  			var did_query=$("#did_query").val();
+  			$("#t1").datagrid("reload",{name_query:name_query,did_query:did_query});
+  		}
   	  	
    </script>
 	
@@ -76,11 +94,11 @@
 	  <tbody>   
 		<tr bgcolor="white">
 			<th align="right">应用名称</th>
-			<th><input type="easyui-textbox"></th>
+			<th><input type="easyui-textbox" id="name_query"></th>
 			<th align="right">应用标识</th>
-			<th><input type="easyui-textbox"></th>
+			<th><input type="easyui-textbox" id="did_query"></th>
 			<th>
-				<a id="btn" href="#" class="easyui-linkbutton" >查询</a>
+				<a id="btn" href="#" class="easyui-linkbutton" onclick="fuzzyQuery()" >查询</a>
 				<a id="resetBtn" class="easyui-linkbutton" onclick="resetBtn()"  >重置</a> 
 				<input type="reset" style="display: none;">
 			</th>

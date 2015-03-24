@@ -3,9 +3,19 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
     "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-<package name="p1"  extends="struts-default">
-	<action name="a1" class="action.MyAction">
-           <result type="json"> </result>  
-        </action>  
-    </package>
+<!--  	<package name="p1"  extends="struts-default">-->
+<!--		<action name="a1" class="action.MyAction">-->
+<!--			<result name="GETALLINFOS">appwh.html</result>-->
+<!--		</action>-->
+<!--	</package>-->
+	
+	<package name="p1"  extends="json-default">
+		<action name="a1" class="action.MyAction">
+			<result type="json">
+				<param name="noCache">true</param>
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+	
 </struts>
