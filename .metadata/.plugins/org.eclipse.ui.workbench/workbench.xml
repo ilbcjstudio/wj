@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="80" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="711" maximized="true" width="1024" x="48" y="343">
+<window height="711" maximized="true" minimized="true" width="1024" x="379" y="259">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="262" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="com.genuitec.eclipse.hibernate.editor.multipage.hibernatemappingeditor" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.genuitec.eclipse.hibernate.editor.multipage.hibernatemappingeditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="com.genuitec.eclipse.j2eedt.core.ejb" itemType="typeToolBarContribution" x="55" y="22"/>
 <coolItem id="com.genuitec.eclipse.springframework.springconfigeditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -18,7 +18,7 @@
 <coolItem id="com.genuitec.eclipse.uml.actions" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="com.genuitec.eclipse.web20.actionset" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.ws.xfire.actions" itemType="typeToolBarContribution" x="95" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.deploytools" itemType="typeToolBarContribution" x="101" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.desktop" itemType="typeToolBarContribution" x="61" y="22"/>
@@ -36,7 +36,7 @@
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="115" y="22"/>
-<coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typePlaceholder" x="38" y="22"/>
+<coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -55,29 +55,49 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.genuitec.eclipse.springframework.springconfigeditor" name="applicationContext.xml" partName="applicationContext.xml" path="D:/Workspaces/DemoSSH/src/applicationContext.xml" title="applicationContext.xml" tooltip="DemoSSH/src/applicationContext.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/applicationContext.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseDao.java" partName="BaseDao.java" path="D:/Workspaces/DemoSSH/src/dao/BaseDao.java" title="BaseDao.java" tooltip="DemoSSH/src/dao/BaseDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/dao/BaseDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="914" selectionTopPixel="101"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyAction.java" partName="MyAction.java" path="D:/Workspaces/DemoSSH/src/action/MyAction.java" title="MyAction.java" tooltip="DemoSSH/src/action/MyAction.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/action/MyAction.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="179" selectionTopPixel="86"/>
-</editor>
-<editor activePart="true" focus="true" id="com.genuitec.eclipse.struts2.editor" name="struts.xml" partName="struts.xml" path="D:/Workspaces/DemoSSH/src/struts.xml" title="struts.xml" tooltip="DemoSSH/src/struts.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/struts.xml"/>
-</editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.html" name="index.html" partName="index.html" path="D:/Workspaces/DemoSSH/WebRoot/index.html" title="index.html" tooltip="DemoSSH/WebRoot/index.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/WebRoot/index.html"/>
-</editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" partName="index.jsp" path="D:/Workspaces/DemoSSH/WebRoot/index.jsp" title="index.jsp" tooltip="DemoSSH/WebRoot/index.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/WebRoot/index.jsp"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseDaoImp.java" partName="BaseDaoImp.java" path="D:/Workspaces/DemoSSH/src/dao/BaseDaoImp.java" title="BaseDaoImp.java" tooltip="DemoSSH/src/dao/BaseDaoImp.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/dao/BaseDaoImp.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="327" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="D:/Workspaces/DemoSSH/src/action/Test.java" title="Test.java" tooltip="DemoSSH/src/action/Test.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/action/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="151" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="441" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyAction.java" partName="MyAction.java" path="D:/Workspaces/DemoSSH/src/action/MyAction.java" title="MyAction.java" tooltip="DemoSSH/src/action/MyAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/action/MyAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="667" selectionTopPixel="204"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageBase.java" partName="PageBase.java" path="D:/Workspaces/DemoSSH/src/action/PageBase.java" title="PageBase.java" tooltip="DemoSSH/src/action/PageBase.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/action/PageBase.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1031" selectionTopPixel="282"/>
+</editor>
+<editor activePart="true" focus="true" id="com.genuitec.eclipse.webdesigner3.editors.html" name="appwh.html" partName="appwh.html" path="D:/Workspaces/DemoSSH/WebRoot/html/appMan/appwh.html" title="appwh.html" tooltip="DemoSSH/WebRoot/html/appMan/appwh.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/WebRoot/html/appMan/appwh.html"/>
+</editor>
+<editor id="com.genuitec.eclipse.springframework.springconfigeditor" name="applicationContext.xml" partName="applicationContext.xml" path="D:/Workspaces/DemoSSH/src/applicationContext.xml" title="applicationContext.xml" tooltip="DemoSSH/src/applicationContext.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/applicationContext.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageBaseImp.java" partName="PageBaseImp.java" path="D:/Workspaces/DemoSSH/src/action/PageBaseImp.java" title="PageBaseImp.java" tooltip="DemoSSH/src/action/PageBaseImp.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/action/PageBaseImp.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="227" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.struts2.editor" name="struts.xml" partName="struts.xml" path="D:/Workspaces/DemoSSH/src/struts.xml" title="struts.xml" tooltip="DemoSSH/src/struts.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoSSH/src/struts.xml"/>
+</editor>
+<editor id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" partName="web.xml" path="D:/Workspaces/DemoSSH/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="D:/Workspaces/DemoSSH/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/DemoSSH/WebRoot/WEB-INF/web.xml"/>
 </editor>
 </editors>
 <views>
@@ -117,8 +137,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (9 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -127,6 +148,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1418644798388">
@@ -158,9 +182,6 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
 <view id="com.genuitec.eclipse.sqlexplorer.views.DatabaseView" partName="DB Browser">
 <viewState/>
 </view>
@@ -171,7 +192,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="com.genuitec.eclipse.webdesigner3.editors.html" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
@@ -272,16 +293,16 @@
 <perspective_action id="com.genuitec.eclipse.uml.umlPerspective"/>
 <perspective_action id="com.genuitec.eclipse.web20.perspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
-<view id="uky.article.imageviewer.views.ImageView"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="com.genuitec.eclipse.ui.HTMLView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="uky.article.imageviewer.views.ImageView"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <fastViewBars/>
 <layout>
@@ -298,7 +319,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.16605166" ratioLeft="225" ratioRight="1130" relationship="2" relative="cvslocation"/>
+<info part="org.eclipse.ui.editorss" ratio="0.20147601" ratioLeft="273" ratioRight="1082" relationship="2" relative="cvslocation"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@d8fdea" ratio="0.8880208" ratioLeft="1023" ratioRight="129" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -315,7 +336,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.67336684" ratioLeft="402" ratioRight="195" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.65829146" ratioLeft="393" ratioRight="204" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.genuitec.eclipse.ast.deploy.core.serverview" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -510,126 +531,169 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/eayui/src/com/action/DeptAction.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/eayui/src/com/serviceImp/DeptServiceImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/eayui/src/struts.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/eayui/WebRoot/index.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" path="/DemoSSH/WebRoot/index.html"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" path="/eayui/WebRoot/WEB-INF/web.xml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" path="/DemoSSH/WebRoot/WEB-INF/web.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/eayui/src/com/service/DeptService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/dao/BaseDao.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/dao/BaseDaoImp.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/action/MyAction.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/bean/Dept.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/DemoSSH/WebRoot/index.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/easyui/WebRoot/index.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" path="/easyui/src/applicationContext.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/action/PageBase.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" path="/DemoSSH/src/applicationContext.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.struts2.editor" path="/easyui/src/struts.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/easyui/WebRoot/MyJsp.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/action/MyAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/action/PageBaseImp.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/DemoSSH/src/applicationContext.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.struts2.editor" path="/DemoSSH/src/struts.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/service/BaseService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoSSH/src/action/Test.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/DemoSSH/WebRoot/index.jsp"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" path="/DemoSSH/WebRoot/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=DemoSSH/WebRoot\/WEB-INF\/lib\/struts2-core-2.1.6.jar&lt;org.apache.struts2(ServletActionContext.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" path="/DemoSSH/WebRoot/html/appMan/appwh.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/DemoSSH/WebRoot/html/appMan/appwh.html"/>
 </editors>
-<item historyLabel="web.xml" index="5"/>
-<item historyLabel="web.xml" index="6"/>
-<item historyLabel="web.xml" index="5"/>
-<item historyLabel="struts.xml" index="2"/>
-<item historyLabel="index.jsp" index="3"/>
-<item historyLabel="DeptServiceImpl.java" index="1">
-<position info="not_deleted" x="1071" y="0"/>
+<item historyLabel="applicationContext.xml" index="4"/>
+<item historyLabel="MyAction.java" index="2">
+<position info="not_deleted" x="486" y="0"/>
 </item>
-<item historyLabel="DeptService.java" index="7">
-<position info="not_deleted" x="233" y="0"/>
+<item historyLabel="PageBase.java" index="3">
+<position info="not_deleted" x="920" y="0"/>
 </item>
-<item historyLabel="DeptAction.java" index="0">
-<position info="not_deleted" x="576" y="0"/>
+<item historyLabel="PageBaseImp.java" index="5">
+<position info="not_deleted" x="184" y="0"/>
 </item>
-<item historyLabel="DeptServiceImpl.java" index="1">
-<position info="not_deleted" x="260" y="0"/>
+<item historyLabel="PageBase.java" index="3">
+<position info="not_deleted" x="920" y="0"/>
 </item>
-<item historyLabel="web.xml" index="5"/>
-<item historyLabel="struts.xml" index="2"/>
-<item historyLabel="index.html" index="4"/>
-<item historyLabel="MyAction.java" index="8">
-<position info="not_deleted" x="843" y="0"/>
+<item historyLabel="PageBaseImp.java" index="5">
+<position info="not_deleted" x="184" y="0"/>
 </item>
-<item historyLabel="Dept.java" index="9">
+<item historyLabel="PageBaseImp.java" index="5">
+<position info="not_deleted" x="227" y="0"/>
+</item>
+<item historyLabel="PageBase.java" index="3">
+<position info="not_deleted" x="182" y="0"/>
+</item>
+<item historyLabel="MyAction.java" index="2">
+<position info="not_deleted" x="814" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="4">
+<position/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position info="not_deleted" x="2043" y="137"/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position/>
+</item>
+<item historyLabel="PageBase.java" index="3">
+<position info="not_deleted" x="33" y="0"/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position/>
+</item>
+<item historyLabel="BaseDaoImp.java" index="1">
+<position info="not_deleted" x="183" y="0"/>
+</item>
+<item historyLabel="PageBaseImp.java" index="5">
+<position info="not_deleted" x="227" y="0"/>
+</item>
+<item historyLabel="BaseDaoImp.java" index="1">
+<position info="not_deleted" x="327" y="0"/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position info="not_deleted" x="1921" y="0"/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position/>
+</item>
+<item historyLabel="PageBase.java" index="3">
+<position info="not_deleted" x="33" y="0"/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item historyLabel="BaseDaoImp.java" index="1">
+<position info="not_deleted" x="327" y="0"/>
+</item>
+<item historyLabel="PageBase.java" index="3">
+<position info="not_deleted" x="33" y="0"/>
+</item>
+<item historyLabel="PageBaseImp.java" index="5">
+<position info="not_deleted" x="227" y="0"/>
+</item>
+<item historyLabel="struts.xml" index="7"/>
+<item historyLabel="applicationContext.xml" index="4">
+<position info="not_deleted" x="2043" y="137"/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position info="not_deleted" x="1739" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position info="not_deleted" x="1739" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position info="not_deleted" x="1743" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position info="not_deleted" x="1737" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position info="not_deleted" x="2044" y="136"/>
+</item>
+<item historyLabel="applicationContext.xml" index="6">
+<position info="not_deleted" x="2001" y="0"/>
+</item>
+<item historyLabel="web.xml" index="8">
+<position info="not_deleted" x="40" y="236"/>
+</item>
+<item historyLabel="BaseDao.java" index="0">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item historyLabel="MyAction.java" index="2">
+<position info="not_deleted" x="1436" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="4"/>
+<item historyLabel="PageBaseImp.java" index="5">
+<position info="not_deleted" x="227" y="0"/>
+</item>
+<item historyLabel="PageBase.java" index="3">
+<position info="not_deleted" x="1031" y="0"/>
+</item>
+<item historyLabel="MyAction.java" index="2">
+<position info="not_deleted" x="941" y="0"/>
+</item>
+<item historyLabel="ServletActionContext.class" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="index.jsp" index="10"/>
-<item historyLabel="index.jsp" index="11"/>
-<item historyLabel="applicationContext.xml" index="12"/>
-<item historyLabel="applicationContext.xml" index="13"/>
-<item historyLabel="applicationContext.xml" index="12"/>
-<item historyLabel="applicationContext.xml" index="13"/>
-<item historyLabel="applicationContext.xml" index="12"/>
-<item historyLabel="applicationContext.xml" index="13"/>
-<item historyLabel="applicationContext.xml" index="12">
-<position info="not_deleted" x="2389" y="1"/>
+<item historyLabel="MyAction.java" index="2">
+<position info="not_deleted" x="667" y="0"/>
 </item>
-<item historyLabel="struts.xml" index="14"/>
-<item historyLabel="index.jsp" index="11"/>
-<item historyLabel="MyJsp.jsp" index="15"/>
-<item historyLabel="index.jsp" index="11"/>
-<item historyLabel="MyAction.java" index="16">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="appwh.html" index="10">
+<position info="not_deleted" x="1500" y="105"/>
 </item>
-<item historyLabel="struts.xml" index="17"/>
-<item historyLabel="index.jsp" index="10"/>
-<item historyLabel="index.html" index="4"/>
-<item historyLabel="applicationContext.xml" index="13"/>
-<item historyLabel="BaseService.java" index="18">
-<position info="not_deleted" x="728" y="0"/>
+<item active="true" historyLabel="appwh.html" index="11">
+<position info="not_deleted" x="1606" y="0"/>
 </item>
-<item historyLabel="applicationContext.xml" index="13"/>
-<item historyLabel="MyAction.java" index="16">
-<position/>
-</item>
-<item historyLabel="Test.java" index="19">
-<position info="not_deleted" x="468" y="0"/>
-</item>
-<item historyLabel="MyAction.java" index="16">
-<position/>
-</item>
-<item historyLabel="index.html" index="4"/>
-<item historyLabel="index.jsp" index="20"/>
-<item historyLabel="MyAction.java" index="16">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="20"/>
-<item historyLabel="web.xml" index="6"/>
-<item historyLabel="index.jsp" index="20"/>
-<item historyLabel="applicationContext.xml" index="13"/>
-<item historyLabel="MyAction.java" index="16">
-<position info="not_deleted" x="696" y="0"/>
-</item>
-<item historyLabel="MyAction.java" index="16">
-<position/>
-</item>
-<item historyLabel="Test.java" index="19">
-<position info="not_deleted" x="151" y="0"/>
-</item>
-<item historyLabel="MyAction.java" index="16">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="applicationContext.xml" index="13"/>
-<item active="true" historyLabel="struts.xml" index="17"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topleft"/>
-<trimItem IMemento.internal.id="bottomleft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@d8fdea"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@72f821"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -637,52 +701,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="DemoSSH/src/action/Test.java">
-<persistable path="/DemoSSH/src/action/Test.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ServletActionContext.class" tooltip="org.apache.struts2.ServletActionContext">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=DemoSSH/WebRoot\/WEB-INF\/lib\/struts2-core-2.1.6.jar&lt;org.apache.struts2(ServletActionContext.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" tooltip="DemoSSH/WebRoot/WEB-INF/web.xml">
 <persistable path="/DemoSSH/WebRoot/WEB-INF/web.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="DemoSSH/WebRoot/index.jsp">
-<persistable path="/DemoSSH/WebRoot/index.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseService.java" tooltip="DemoSSH/src/service/BaseService.java">
-<persistable path="/DemoSSH/src/service/BaseService.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="index.html" tooltip="DemoSSH/WebRoot/index.html">
-<persistable path="/DemoSSH/WebRoot/index.html"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.struts2.editor" name="struts.xml" tooltip="DemoSSH/src/struts.xml">
 <persistable path="/DemoSSH/src/struts.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyAction.java" tooltip="DemoSSH/src/action/MyAction.java">
-<persistable path="/DemoSSH/src/action/MyAction.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="MyJsp.jsp" tooltip="easyui/WebRoot/MyJsp.jsp">
-<persistable path="/easyui/WebRoot/MyJsp.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.struts2.editor" name="struts.xml" tooltip="easyui/src/struts.xml">
-<persistable path="/easyui/src/struts.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageBaseImp.java" tooltip="DemoSSH/src/action/PageBaseImp.java">
+<persistable path="/DemoSSH/src/action/PageBaseImp.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" name="applicationContext.xml" tooltip="DemoSSH/src/applicationContext.xml">
 <persistable path="/DemoSSH/src/applicationContext.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" name="applicationContext.xml" tooltip="easyui/src/applicationContext.xml">
-<persistable path="/easyui/src/applicationContext.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="appwh.html" tooltip="DemoSSH/WebRoot/html/appMan/appwh.html">
+<persistable path="/DemoSSH/WebRoot/html/appMan/appwh.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="easyui/WebRoot/index.jsp">
-<persistable path="/easyui/WebRoot/index.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageBase.java" tooltip="DemoSSH/src/action/PageBase.java">
+<persistable path="/DemoSSH/src/action/PageBase.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" name="applicationContext.xml" tooltip="eayui/src/applicationContext.xml">
-<persistable path="/eayui/src/applicationContext.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyAction.java" tooltip="DemoSSH/src/action/MyAction.java">
+<persistable path="/DemoSSH/src/action/MyAction.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="eayui/WebRoot/index.jsp">
-<persistable path="/eayui/WebRoot/index.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="DemoSSH/src/action/Test.java">
+<persistable path="/DemoSSH/src/action/Test.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseDaoImp.java" tooltip="DemoSSH/src/dao/BaseDaoImp.java">
+<persistable path="/DemoSSH/src/dao/BaseDaoImp.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseDao.java" tooltip="DemoSSH/src/dao/BaseDao.java">
+<persistable path="/DemoSSH/src/dao/BaseDao.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="index.html" tooltip="DemoSSH/WebRoot/index.html">
+<persistable path="/DemoSSH/WebRoot/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="DemoSSH/WebRoot/index.jsp">
+<persistable path="/DemoSSH/WebRoot/index.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.j2eedt.core.editor.tld" name="spring.tld" tooltip="DemoSSH/WebRoot/WEB-INF/spring.tld">
+<persistable path="/DemoSSH/WebRoot/WEB-INF/spring.tld"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="index.html" tooltip="DemoSSH/WebRoot/WEB-INF/index.html">
+<persistable path="/DemoSSH/WebRoot/WEB-INF/index.html"/>
 </file>
 </mruList>
 </workbench>
