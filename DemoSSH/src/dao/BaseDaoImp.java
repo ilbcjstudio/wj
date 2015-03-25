@@ -11,5 +11,5 @@ public interface BaseDaoImp {
 	
 	public void update(String hql,Object object);
 	
-	public void del(String hql,Object object);
+	public void del(Object object);
 }

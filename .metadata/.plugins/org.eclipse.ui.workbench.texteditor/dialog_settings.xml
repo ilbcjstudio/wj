@@ -3,35 +3,36 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="273" key="DIALOG_WIDTH"/>
 		<item value="80" key="DIALOG_Y_ORIGIN"/>
-		<item value="939" key="DIALOG_X_ORIGIN"/>
 		<item value="394" key="DIALOG_HEIGHT"/>
+		<item value="939" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="transactionManager" key="selection"/>
+		<item value="query_did" key="selection"/>
 		<list key="findhistory">
+			<item value="query_did"/>
+			<item value="-2.5.xsd"/>
+			<item value="tab1"/>
+			<item value="selectProject"/>
+			<item value="sysUser"/>
+			<item value="otGrid"/>
 			<item value="transactionManager"/>
 			<item value="hibernate.current_session_context_class =“thread”"/>
-			<item value="bean"/>
-			<item value="aop"/>
-			<item value="tx"/>
-			<item value="student"/>
-			<item value="&lt;tr&gt;"/>
-			<item value="td"/>
 		</list>
 		<list key="replacehistory">
+			<item value="-3.0.xsd"/>
+			<item value="dept"/>
+			<item value="t1"/>
 			<item value="aop"/>
 			<item value="tx"/>
 			<item value="bean"/>
-			<item value="dept"/>
 			<item value="&lt;tr bgcolor=&quot;#FFFFFF&quot;&gt;"/>
 			<item value="&lt;tr class=&quot;tr&quot;&gt;"/>
-			<item value="th"/>
 		</list>
 	</section>
 </section>

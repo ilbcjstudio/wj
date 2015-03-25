@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
+import bean.Dept;
+
 public class BaseDao extends HibernateDaoSupport implements BaseDaoImp {
 
 	public void add(String hql, Object object) {
@@ -11,9 +13,9 @@ public class BaseDao extends HibernateDaoSupport implements BaseDaoImp {
 		super.getHibernateTemplate().save(hql,object);
 	}
 
-	public void del(String hql, Object object) {
+	public void del(Object object) {
 		// TODO Auto-generated method stub
-		super.getHibernateTemplate().delete(hql,object);
+		super.getHibernateTemplate().delete(object);
 	} 
 
 	public List queryAllInfos(String hql) {
@@ -30,5 +32,6 @@ public class BaseDao extends HibernateDaoSupport implements BaseDaoImp {
 		// TODO Auto-generated method stub
 		super.getHibernateTemplate().update(object);
 	}
+	
 }
  

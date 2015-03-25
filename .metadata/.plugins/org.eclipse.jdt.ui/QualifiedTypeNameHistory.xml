@@ -11,12 +11,20 @@
 <fullyQualifiedTypeName name="service.BaseService"/>
 <fullyQualifiedTypeName name="service.BaseServiceImp"/>
 <fullyQualifiedTypeName name="com.service.DeptService"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.apache.struts2.ServletActionContext"/>
 <fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
-<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="action.PageBaseImp"/>
 <fullyQualifiedTypeName name="action.PageBase"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.apache.struts2.dispatcher.mapper.ActionMapping"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="bean.Dept"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
