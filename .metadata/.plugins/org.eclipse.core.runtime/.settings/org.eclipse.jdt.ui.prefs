@@ -1,4 +1,4 @@
-#Wed Mar 25 18:46:33 CST 2015
+#Thu Mar 26 18:40:07 CST 2015
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 spelling_ignore_urls=true
@@ -26,6 +26,6 @@ spelling_ignore_digits=true
 spelling_ignore_upper=true
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="dao.BaseDaoImp"><rhs name\="dao.BaseDao"/></lhs><lhs name\="org.springframework.orm.hibernate3.support.HibernateDaoSupport"><rhs name\="dao.BaseDao"/></lhs><lhs name\="org.springframework.dao.support.DaoSupport"><rhs name\="dao.BaseDao"/></lhs><lhs name\="org.springframework.beans.factory.InitializingBean"><rhs name\="dao.BaseDao"/></lhs><lhs name\="dao.BaseDao"><rhs name\="dao.BaseDao"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Integer"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="dao.BaseDaoImp"><rhs name\="dao.BaseDao"/></lhs><lhs name\="org.springframework.orm.hibernate3.support.HibernateDaoSupport"><rhs name\="dao.BaseDao"/></lhs><lhs name\="org.springframework.dao.support.DaoSupport"><rhs name\="dao.BaseDao"/></lhs><lhs name\="org.springframework.beans.factory.InitializingBean"><rhs name\="dao.BaseDao"/></lhs><lhs name\="dao.BaseDao"><rhs name\="dao.BaseDao"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Integer"/></lhs><lhs name\="bean.Dept"><rhs name\="bean.Dept"/></lhs></history>
 spelling_ignore_sentence=true
 org.eclipse.jdt.ui.text.code_templates_migrated=true

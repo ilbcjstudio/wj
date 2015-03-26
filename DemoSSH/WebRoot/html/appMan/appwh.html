@@ -29,8 +29,6 @@
 	$(function(){
 //		alert("appwh");
 	
- 
-	
 		$("#t1").datagrid({
   	  	  	url:"a1!getAllInfos.action",
   	  		columns:[[
@@ -59,7 +57,7 @@
 				text:'删除',
 				iconCls:'icon-remove',
 				handler	:function(){				  
-//					var row = $('#t1').datagrid('getSelections');  
+//					var row = $('#t1').datagrid('getSelections');  /*多行*/
 					var row = $('#t1').datagrid('getSelected');/*单行*/
 			          
 			        if (row) {
@@ -75,13 +73,24 @@
 			}],
 //			fit:true,
 //			height:"500px",
-			singleSelect:true,//单选
-			pageSize : 5,//默认选择的分页是每页5行数据  
-			pageList : [ 5, 10, 15, 20 ],//可以选择的分页集合  
+			singleSelect:true,//单选 
 			pagination:true, //分页插件
 			fitColumns:true	//自动调节列宽
   	  	  	  });
-  	  	  	  
+  	  	  	
+		$('#t1').datagrid('getPager').pagination({
+			pageSize: 10,
+			pageList : [ 10,20,50 ],//可以选择的分页集合 
+	    	displayMsg:'显示第{from}-{to}条信息   共{total}条信息',
+	    	beforePageText: '第',//页数文本框前显示的汉字  
+        	afterPageText: '页    共 {pages} 页', 
+	    	onBeforeRefresh:function(pageNumber, pageSize){
+	     		$(this).pagination('loading');
+	     		alert('pageNumber:'+pageNumber+',pageSize:'+pageSize);
+	     		$(this).pagination('loaded');
+	    	}
+	   });
+  	  	  	 
   	  	  	  
 	});
 	
@@ -95,7 +104,7 @@
 		var query_dname=$("#query_dname").val();
 		
 		$("#t1").datagrid("reload",{query_did:query_did,query_dname:query_dname});
-		alert("应用名称: "+query_dname+"应用标识:"+query_did);
+//		alert("应用名称: "+query_dname+"应用标识:"+query_did);
 		
  		$("#form1")[0].reset(); /*表单重置1*/
 	}
